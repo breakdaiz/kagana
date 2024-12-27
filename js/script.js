@@ -48,15 +48,12 @@ async function checkout() {
   const id = "28d463cd-ce53-48aa-ba12-b51a66d7a36f";
   const URL = "https://payments.maya.ph/invoice/payment";
 
-  await fetch(
-    `https://payments.maya.ph/invoice/payment?id=${id}&amount=${amount}`,
-    {
-      method: "GET",
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-      },
-    }
-  )
+  fetch(`https://payments.maya.ph/invoice/payment?id=${id}&amount=${amount}`, {
+    method: "GET",
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
+  })
     .then(response => response.json())
     .then(data => console.log(data));
 }
