@@ -52,7 +52,7 @@ async function checkout() {
     method: "GET",
     headers: [
       {
-        source: "https://payments.maya.ph/invoice/(.*)",
+        // source: "https://payments.maya.ph/invoice/(.*)",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "*" },
