@@ -85,7 +85,7 @@ async function checkout() {
   };
 
   fetch(
-    `https://payments.maya.ph/invoice/payment?id=${id}&amount=${amount}`,
+    "https://payments.maya.ph/invoice/payment?id=28d463cd-ce53-48aa-ba12-b51a66d7a36f&amount=2000",
     requestOptions
   )
     .then(response => response.text())
