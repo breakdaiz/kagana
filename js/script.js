@@ -43,7 +43,7 @@ function formSubmit(e) {
   }
 }
 
-async function checkout() {
+function checkout() {
   console.log("Checkouuuutt");
   const id = "28d463cd-ce53-48aa-ba12-b51a66d7a36f";
   const URL = "https://payments.maya.ph/invoice/payment";
