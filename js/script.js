@@ -49,7 +49,7 @@ async function checkout() {
   const URL = "https://payments.maya.ph/invoice/payment";
 
   await fetch(
-    `http://payments.maya.ph/invoice/payment?id=${id}&amount=${amount}`
+    `https://payments.maya.ph/invoice/payment?id=${id}&amount=${amount}`
   )
     .then(response => response.json())
     .then(data => console.log(data));
